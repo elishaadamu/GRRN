@@ -50,7 +50,7 @@
     width: 100%;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
   }
   .contact-location{
@@ -72,7 +72,7 @@
   }
 
   .contact-input{
-    min-width: 400px;
+    min-width: 700px;
   }
 
   .whitelist-form, fieldset, .contact-input fieldset{
@@ -134,14 +134,20 @@
     border: 2px solid var(--secondary-400)
   }
 
-  .whitelist-form button, .contact-input button{
+  .whitelist-form button{
     border-radius: 11px;
     margin-top:7.29px;
     width: 200px;
     border:none;
     padding: 20px;
   }
-
+  .contact-input button{
+    border-radius: 11px;
+    margin-top:7.29px;
+    width: 120px;
+    border:none;
+    padding: 10px;
+  }
   .whitelist-form #btn-submit{
     font-size: 18px;
     font-weight: 600;
@@ -149,7 +155,7 @@
   }
 
   .contact-form button{
-    align-self: center;
+    align-self: self-start;
   }
 
  
@@ -680,7 +686,6 @@
     font-weight: 500;
     text-align: left;
     color: #0E2F3E;
-
   }
 
   .accordion .accordion-item button{
@@ -883,4 +888,3 @@
   }
   }
 
- 
