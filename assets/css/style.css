@@ -1544,4 +1544,7 @@ width: 80%;
   .silver-imac{
     width: 100% !important;
   }
+  .contact-input {
+    min-width: 100% !important;
+}
 }
