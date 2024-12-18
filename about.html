@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="assets/css/custom.css"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <title>About Us</title>
+      <link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-alpha.5/dist/themes/default.css" />
     </head>
     <body>
         <header class="container navbar">
@@ -44,7 +45,7 @@
                         </div>
                         <div class="wrapper">
                             <div class="h-line-container"><div class="h-line" id="h-line-1"></div></div>
-                            <h3 class="text-gradient">
+                            <h3>
                                 GRRN empower individuals and businesses to achieve 
                                 financial freedom with our comprehensive suite of services
                             </h3>
@@ -62,7 +63,7 @@
                     <div class="driving-force">
                         <div>
                             <div class="h-line-container"><div class="h-line" id="h-line-3"></div></div>
-                            <h2>Our Driving Force</h2>
+                            <h2 class="text-gradient" >Our Driving Force</h2>
                             <div class="h-line-container"><div class="h-line" id="h-line-4"></div></div>
                         </div>
                         <div class="driving-force-top">
@@ -117,43 +118,36 @@
                 </section>  
 
                 <!-- ACCORDION SESSION -->
-                <section class="faq-section">
-                    <div class="faq-wrapper">
-                        <!-- FAQ CONTENT -->
-                        <div class="faq-content">
-                            <h3 class="text-wrapper">FAQs</h3>
-                            <p class="text">
-                                Question Frequently asked by our users. Click on the button to view our response.
-                            </p>
-                        </div>
-                        <!-- ACCORDION -->
-                        <div class="accordion">
-                            <!-- accordion 1 -->
-                            <div class="accordion-item">
-                                <p class="question">What services does GRRN provide?</p>
-                                <button>
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </div>
-                            <!-- Accordion 2 -->
-                            <div class="accordion-item">
-                                <p class="question">How does GRRN ensure the security of transactions?</p>
-                                <button>
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </div>
-                              <!-- Accordion 2 -->
-                              <div class="accordion-item">
-                                <p class="question">Who can benefit from using GRRN?</p>
-                                <button>
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </div>
-                          
-                        </div>
-                    </div>
-                </section>
-
+                <h4 class="fw-bold text-center text-gradient FAQ">
+                  <i class="fa-solid fa-timeline me-3 "></i>
+                  FAQs
+                </h4>
+                <div class="hr-line mt-5 mb-5"></div>
+                <p class="fw-bold text-center faq-description"><i class="fa-brands fa-square-web-awesome fa-lg me-2"></i>Question Frequently asked by our users. Click on the button to view our response.</p>
+                
+                <!-- WebAwesome Timeline -->
+                <div class="wa-timeline">
+                  <wa-details id="details-1" summary="What services does GRRN provide?">
+                    <p>GRRN is a pioneering fintech platform developing a comprehensive payment gateway to facilitate seamless financial transactions across regions. Leveraging innovative technology, GRRN simplifies complex processes with real-time cross-border payments, bulk settlements, and integration-friendly APIs, ensuring a smooth and efficient user experience. 
+                      <br><br>
+                    The platform empowers financial freedom by providing accessible, cost-effective tools that enable users to take control of their finances. Using cutting-edge technology like secure APIs, AI-driven risk assessments, and instant notifications, GRRN ensures reliable and secure transactions. Focused on inclusion, GRRN bridges financial gaps for underserved markets, fostering economic growth and expanding financial accessibility globally.</p>
+                  </wa-details>
+                  <wa-details id="details-2" summary="How does GRRN ensure the security of transactions?">
+                    <p>GRRN ensures secure transactions with advanced technology, compliance, and robust systems. Authentication methods like OTP, MFA, and OAuth 2.0 protect user access and API requests. Data is safeguarded with TLS encryption and secure storage. AI-powered fraud detection and transaction monitoring identify and block suspicious activities in real-time. GRRN complies with KYC/AML standards and cross-border regulations, ensuring secure operations. <br><br>
+                      APIs are token-protected, encrypted, and rate-limited to prevent misuse. Users can file disputes directly, with resolutions handled by a dedicated review team. Regular audits, updates, role-based access control, and partnerships with trusted institutions ensure secure settlements and reliable financial services.
+                    </p>
+                  </wa-details>
+                  <wa-details id="details-3" summary="Who can benefit from using GRRN?">
+                    <p>
+                      GRRN benefits a wide range of users by providing seamless, secure, and accessible financial solutions. Individuals, including expatriates, underserved communities, and freelancers, can use GRRN for instant, affordable money transfers, wallet management, loans, and international payments. SMEs benefit from GRRN's multi-currency tools, cross-border transactions, and streamlined payment processes.
+                      <br><br>
+                      Fintech platforms and developers can integrate GRRN's APIs to enhance financial services, while NGOs can distribute aid efficiently to underserved regions. Financial institutions and banks leverage GRRN's bulk settlements and payment gateway to expand offerings. Travelers gain real-time currency exchange and local cash pickup options, ensuring inclusive financial accessibility.
+                    </p>
+                  </wa-details>
+                </div>
+               
+                
+          
                 <!-- CTA ACTION -->
                 <session class="cta-section">
                     <div class="cta-box">
@@ -162,7 +156,7 @@
                         <!-- ============ -->
                         <div class="cta-action">
                             <div class="cta-content">
-                                <h3 class="text-gradient">Take Control of Your Financial Freedom with GRRN</h3>
+                                <h3>Take Control of Your Financial Freedom with GRRN</h3>
                                 <div class="cta-store">
                                     <!-- APP STORE -->
                                     <div class="img-holder">
@@ -218,5 +212,6 @@
           </div>
         </footer>
         <script src="assets/js/script.js"></script>
+        <script type="module" src="https://early.webawesome.com/webawesome@3.0.0-alpha.5/dist/webawesome.loader.js"></script>
     </body>
 </html>
