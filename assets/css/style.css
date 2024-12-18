@@ -431,7 +431,7 @@ white-space: nowrap;
     width: 95%; /* Full width on mobile */
     height: auto; /* Maintain aspect ratio */
     left: 15px; /* Align to the left */
-    margin-top: 15px;
+    margin-top: 60px;
 }
 
 .box .group {
