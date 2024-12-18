@@ -1542,6 +1542,6 @@ width: 80%;
     font-size: large;
   }
   .silver-imac{
-    width: 100%;
+    width: 100% !important;
   }
 }
