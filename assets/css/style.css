@@ -693,6 +693,7 @@ gap: 17px;
 .frame-footer .mask-group {
 width: 120px;
 height: 39.35px;
+filter: contrast(0.5);
 }
 
 .frame-footer .links {
@@ -1498,9 +1499,6 @@ align-items: center;
   margin-right: -40.56px;
   margin-left: -4px;
 }
-
-
-
 .GRRN-Novus{
   display: flex;
   flex-direction: row;
@@ -1608,8 +1606,8 @@ details {
 /* Item 1 */
 
 #details-1[open]::before {
-  background-color: DodgerBlue;
-  outline-color: DodgerBlue;
+  background-color: grey;
+  outline-color: grey;
 }
 
 #details-1[open]::part(base) {
@@ -1617,11 +1615,11 @@ details {
 }
 
 #details-1[open]::part(summary) {
-  color: Dodgerblue;
+  color: grey;
 }
 
 #details-1[open]::part(summary-icon) {
-  color: Dodgerblue;
+  color: grey;
 }
 
 #details-1::part(header) {
@@ -1629,14 +1627,14 @@ details {
 }
 
 #details-1[open]::part(header) {
-  border: 1px solid Dodgerblue;
+  border: 1px solid grey;
 }
 
 /* Item 2 */
 
 #details-2[open]::before {
-  background-color: Orange;
-  outline-color: Orange;
+  background-color: grey;
+  outline-color: grey;
 }
 
 #details-2[open]::part(base) {
@@ -1644,11 +1642,11 @@ details {
 }
 
 #details-2[open]::part(summary) {
-  color: Orange;
+  color: grey;
 }
 
 #details-2[open]::part(summary-icon) {
-  color: Orange;
+  color: grey;
 }
 
 #details-2::part(header) {
@@ -1656,14 +1654,14 @@ details {
 }
 
 #details-2[open]::part(header) {
-  border: 1px solid Orange;
+  border: 1px solid grey;
 }
 
 /* Item 3 */
 
 #details-3[open]::before {
-  background-color: HotPink;
-  outline-color: HotPink;
+  background-color: grey;
+  outline-color: grey;
 }
 
 #details-3[open]::part(base) {
@@ -1671,11 +1669,11 @@ details {
 }
 
 #details-3[open]::part(summary) {
-  color: HotPink;
+  color: grey;
 }
 
 #details-3[open]::part(summary-icon) {
-  color: HotPink;
+  color: grey;
 }
 
 #details-3::part(header) {
@@ -1683,7 +1681,7 @@ details {
 }
 
 #details-3[open]::part(header) {
-  border: 1px solid HotPink;
+  border: 1px solid grey;
 }
 
 /* Prevents sticky hover on portable devices */
@@ -1691,20 +1689,20 @@ details {
 @media (hover: hover) {
   #details-1:hover {
     &#details-1::before {
-      background-color: DodgerBlue;
-      outline-color: DodgerBlue;
+      background-color: grey;
+      outline-color: grey;
     }
   }
   #details-2:hover {
     &#details-2::before {
-      background-color: Orange;
-      outline-color: Orange;
+      background-color: grey;
+      outline-color: grey;
     }
   }
   #details-3:hover {
     &#details-3::before {
-      background-color: HotPink;
-      outline-color: HotPink;
+      background-color: grey;
+      outline-color: grey;
     }
   }
 }
@@ -1714,8 +1712,8 @@ details {
 /* Item 1 */
 
 #details-4[open]::before {
-  background-color: DodgerBlue;
-  outline-color: DodgerBlue;
+  background-color: grey;
+  outline-color: grey;
 }
 
 #details-4[open]::part(base) {
@@ -1736,14 +1734,14 @@ details {
 }
 
 #details-4[open]::part(header) {
-  background-color: DodgerBlue;
+  background-color: grey;
 }
 
 /* Item 2 */
 
 #details-5[open]::before {
-  background-color: Orange;
-  outline-color: Orange;
+  background-color: grey;
+  outline-color: grey;
 }
 
 #details-5[open]::part(base) {
@@ -1764,14 +1762,14 @@ details {
 }
 
 #details-5[open]::part(header) {
-  background-color: Orange;
+  background-color: grey;
 }
 
 /* Item 3 */
 
 #details-6[open]::before {
-  background-color: HotPink;
-  outline-color: HotPink;
+  background-color: grey;
+  outline-color: grey;
 }
 
 #details-6[open]::part(base) {
@@ -1792,7 +1790,7 @@ details {
 }
 
 #details-6[open]::part(header) {
-  background-color: HotPink;
+  background-color: grey;
 }
 
 /* Prevents sticky hover on portable devices */
@@ -1800,20 +1798,20 @@ details {
 @media (hover: hover) {
   #details-4:hover {
     &#details-4::before {
-      background-color: DodgerBlue;
-      outline-color: DodgerBlue;
+      background-color: grey;
+      outline-color: grey;
     }
   }
   #details-5:hover {
     &#details-5::before {
-      background-color: Orange;
-      outline-color: Orange;
+      background-color: grey;
+      outline-color: grey;
     }
   }
   #details-6:hover {
     &#details-6::before {
-      background-color: HotPink;
-      outline-color: HotPink;
+      background-color: grey;
+      outline-color: grey;
     }
   }
 }
@@ -1830,7 +1828,7 @@ details {
   padding: 0;
   transition: all 0.2s;
   &:hover {
-    border: 1px solid DodgerBlue;
+    border: 1px solid grey;
   }
 }
 
@@ -1886,16 +1884,16 @@ details {
 /* Item 1 */
 
 #tl-btn-1:not(.collapsed) {
-  color: DodgerBlue;
+  color: grey;
   background-color: White !important;
-  border: 1px solid DodgerBlue;
+  border: 1px solid grey;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
   &::before {
-    background-color: DodgerBlue;
-    outline-color: DodgerBlue;
+    background-color: grey;
+    outline-color: grey;
   }
   &::after {
     filter: invert(48%) sepia(32%) saturate(5795%) hue-rotate(192deg)
@@ -1906,16 +1904,16 @@ details {
 /* Item 2 */
 
 #tl-btn-2:not(.collapsed) {
-  color: Orange;
+  color: grey;
   background-color: White !important;
-  border: 1px solid Orange;
+  border: 1px solid grey;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
   &::before {
-    background-color: Orange;
-    outline-color: Orange;
+    background-color: grey;
+    outline-color: grey;
   }
   &::after {
     filter: invert(55%) sepia(61%) saturate(2557%) hue-rotate(2deg)
@@ -1926,16 +1924,16 @@ details {
 /* Item 3 */
 
 #tl-btn-3:not(.collapsed) {
-  color: HotPink;
+  color: grey;
   background-color: White !important;
-  border: 1px solid HotPink;
+  border: 1px solid grey;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
   &::before {
-    background-color: HotPink;
-    outline-color: HotPink;
+    background-color: grey;
+    outline-color: grey;
   }
   &::after {
     filter: invert(64%) sepia(35%) saturate(3888%) hue-rotate(296deg)
@@ -1957,12 +1955,12 @@ details {
 
 #tl-btn-4:not(.collapsed) {
   color: White;
-  background-color: DodgerBlue;
+  background-color: grey;
   border: none;
   border-radius: 0;
   &::before {
-    background-color: DodgerBlue;
-    outline-color: DodgerBlue;
+    background-color: grey;
+    outline-color: grey;
   }
   &::after {
     filter: invert(100%) brightness(200%);
@@ -1973,12 +1971,12 @@ details {
 
 #tl-btn-5:not(.collapsed) {
   color: White;
-  background-color: Orange;
+  background-color: grey;
   border: none;
   border-radius: 0;
   &::before {
-    background-color: Orange;
-    outline-color: Orange;
+    background-color: grey;
+    outline-color: grey;
   }
   &::after {
     filter: invert(100%) brightness(200%);
@@ -1989,12 +1987,12 @@ details {
 
 #tl-btn-6:not(.collapsed) {
   color: White;
-  background-color: HotPink;
+  background-color: grey;
   border: none;
   border-radius: 0;
   &::before {
-    background-color: HotPink;
-    outline-color: HotPink;
+    background-color: grey;
+    outline-color: grey;
   }
   &::after {
     filter: invert(100%) brightness(200%);
@@ -2013,27 +2011,41 @@ details {
 
 @media (hover: hover) {
   #tl-btn-1:hover::before {
-    background-color: Dodgerblue;
-    outline-color: Dodgerblue;
+    background-color: grey;
+    outline-color: grey;
   }
   #tl-btn-2:hover::before {
-    background-color: Orange;
-    outline-color: Orange;
+    background-color: grey;
+    outline-color: grey;
   }
   #tl-btn-3:hover::before {
-    background-color: HotPink;
-    outline-color: Hotpink;
+    background-color: grey;
+    outline-color: grey;
   }
   #tl-btn-4:hover::before {
-    background-color: Dodgerblue;
-    outline-color: Dodgerblue;
+    background-color: grey;
+    outline-color: grey;
   }
   #tl-btn-5:hover::before {
-    background-color: Orange;
-    outline-color: Orange;
+    background-color: grey;
+    outline-color: grey;
   }
   #tl-btn-6:hover::before {
-    background-color: HotPink;
-    outline-color: Hotpink;
+    background-color: grey;
+    outline-color: grey;
   }
+}
+.disclaimer, .trusted-parthers{
+  color: var(--primary-50) !important;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: left;
+}
+.disclaimer h3{
+  text-align: center;
+}
+.trusted-parthers{
+  text-align: left;
 }
