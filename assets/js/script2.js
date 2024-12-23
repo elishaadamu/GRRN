@@ -102,7 +102,7 @@ const sendEmail=()=>{
         try{
             const data = {
                 Host:"smtp.gmail.com",
-                Username:"",
+                Username:"externalcontact@grrn.io",
                 Password:"",
                 To:"receiver",
                 From:"sender",
