@@ -788,9 +788,16 @@
       flex-direction: column;
     }
 
+    .whitelist-form-grid-2x2{
+      display: grid;
+      grid-template-columns: 5fr;
+    }
     .contact-input{
       margin: 40px 0;
     }
+    .whitelist-form button {
+      width: 100%;
+  }
 
     /* WHITELIST */
     .whitelist-grid{

@@ -2036,16 +2036,35 @@ details {
   }
 }
 .disclaimer, .trusted-parthers{
-  color: var(--primary-50) !important;
+  color: var(--secondary-50) !important;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 0 10px;
   text-align: left;
 }
-.disclaimer h3{
+.trusted-parthers{
   text-align: center;
 }
-.trusted-parthers{
-  text-align: left;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax values as needed */
+  grid-gap: 30px; /* Adjust gap as needed */
+  max-width: 700px;
+  margin: 40px auto; /* Center the container */
+}
+.grid-container img{
+  width: 125px;
+  height: auto; 
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust minmax values as needed */
+    margin: 40px auto !important;
+  }
+  .grid-container img{
+    margin-left: 0px !important;
+  }
 }
