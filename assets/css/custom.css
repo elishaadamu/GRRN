@@ -677,7 +677,6 @@
     border-radius: 12px;
     padding: 20px 24px;
     display: grid;
-    grid-template-columns: 9fr 1fr;
   }
 
   .accordion .accordion-item p{
@@ -760,6 +759,7 @@
     text-decoration-skip-ink: none;
     max-width: 800px;
     margin: 0 auto;
+    text-align: justify;
   }
 
   .privacy ul li{
@@ -897,3 +897,31 @@
   }
   }
 
+.sign-up a{
+  text-decoration: none;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+.accordion-item.open .accordion-content {
+  display: block;
+}
+.accordion-header{
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-content p{
+  font-size: 15px !important;
+}
+.accordion-content {
+  transition: height 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 100%;
+}

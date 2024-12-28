@@ -4,16 +4,6 @@ const toggle = document.getElementById('menu-toggle');
             toggle.addEventListener('click', () => {
                 navbar.classList.toggle('active');
             });
-
-            document.querySelectorAll('.accordion-item').forEach(item => {
-                item.querySelector('.question').addEventListener('click', () => {
-                    const openItem = document.querySelector('.accordion-item.open');
-                    if (openItem && openItem !== item) {
-                        openItem.classList.remove('open');
-                    }
-                    item.classList.toggle('open');
-                });
-            });
             function change_style_1() {
                 document.getElementById("details-4").id = "details-1";
                 document.getElementById("details-5").id = "details-2";
@@ -37,4 +27,15 @@ const toggle = document.getElementById('menu-toggle');
                 document.getElementById("tl-btn-2").id = "tl-btn-5";
                 document.getElementById("tl-btn-3").id = "tl-btn-6";
               }
-              
+              document.querySelectorAll('.accordion-item').forEach(item => {
+                const button = item.querySelector('.toggle-btn');
+                button.addEventListener('click', () => {
+                    // Close any open items
+                    const openItem = document.querySelector('.accordion-item.open');
+                    if (openItem && openItem !== item) {
+                        openItem.classList.remove('open');
+                    }
+                    // Toggle the current item
+                    item.classList.toggle('open');
+                });
+            });
