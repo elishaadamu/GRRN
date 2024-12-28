@@ -916,12 +916,3 @@
 .accordion-content p{
   font-size: 15px !important;
 }
-.accordion-content {
-  transition: height 0.3s ease-in-out;
-  max-height: 0;
-  overflow: hidden;
-}
-
-.accordion-item.open .accordion-content {
-  max-height: 100%;
-}
