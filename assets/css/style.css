@@ -2035,7 +2035,7 @@ details {
     outline-color: grey;
   }
 }
-.disclaimer, .trusted-parthers{
+.disclaimer, .trusted-partners{
   color: var(--secondary-50) !important;
   width: 100%;
   max-width: 1200px;
@@ -2043,7 +2043,7 @@ details {
   padding: 0 10px;
   text-align: left;
 }
-.trusted-parthers{
+.trusted-partners{
   text-align: center;
 }
 .grid-container {
