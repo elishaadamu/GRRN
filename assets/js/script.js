@@ -39,3 +39,41 @@ const toggle = document.getElementById('menu-toggle');
                     item.classList.toggle('open');
                 });
             });
+
+            document.querySelectorAll('.img').forEach((img) => {
+              img.addEventListener('click', () => {
+                  // Get the modal text and title
+                  const text = img.getAttribute('data-modal-text');
+                  const title = img.getAttribute('alt');
+          
+                  // Create the modal
+                  const modal = document.createElement('div');
+                  modal.classList.add('modal');
+                  modal.innerHTML = `
+                      <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <h2>${title}</h2>
+                          <p>${text}</p>
+                      </div>
+                  `;
+          
+                  // Append the modal to the body
+                  document.body.appendChild(modal);
+          
+                  // Show the modal
+                  modal.style.display = 'block';
+          
+                  // Close the modal on clicking the close button
+                  modal.querySelector('.close').addEventListener('click', () => {
+                      document.body.removeChild(modal);
+                  });
+          
+                  // Close the modal when clicking outside the content
+                  window.addEventListener('click', (event) => {
+                      if (event.target === modal) {
+                          document.body.removeChild(modal);
+                      }
+                  });
+              });
+          });
+          
