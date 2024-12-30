@@ -2108,3 +2108,9 @@ details {
   color: black;
   text-decoration: none;
 }
+
+@media screen and (max-width: 1024px) {
+  .modal-content{
+    margin: 60% auto !important;
+  }
+}
