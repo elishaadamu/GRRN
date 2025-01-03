@@ -2066,6 +2066,7 @@ details {
   .grid-container img{
     margin-left: 0px !important;
   }
+
 }
 
 .div-2 img{
@@ -2112,4 +2113,29 @@ details {
   .modal-content{
     margin: 60% auto !important;
   }
+  .solution-section .div,
+.solution-section .div-2 {
+  flex: 1; /* Allow both divs to grow equally */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch !important;
+}
+.solution-section .text-wrapper {
+  width: 100% !important;
+}
+.navbar-2 {
+  font-size: small !important;
+}
+.solution-section .p {
+  width: 100% !important;
+}
+}
+@media screen and (max-width: 1280px) {
+  .body-b {
+    width: 100% !important;
+    flex-direction: column !important;
+}
+.body-b .real-time-fintech{
+  width: 100% !important;
+}
 }
