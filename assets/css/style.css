@@ -2139,3 +2139,12 @@ details {
   width: 100% !important;
 }
 }
+.sign-up a{
+  color: var(--variable-collection-brand-black) !important;
+}
+.contact-us a{
+  color: var(--variable-collection-brand-black) !important;
+}
+.overlap-group:hover{
+  background-color: var(--secondary-800) !important;
+}
